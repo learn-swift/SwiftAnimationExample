@@ -1,0 +1,6 @@
+framework module Pods_SwiftAmination {
+  umbrella header "Pods-SwiftAmination-umbrella.h"
+
+  export *
+  module * { export * }
+}
