@@ -5,23 +5,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="mpo-Dv-qjf">
             <objects>
-                <viewController id="Xvz-LE-rA2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="Xvz-LE-rA2" customClass="MainViewController" customModule="SwiftAmination" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dLL-Ru-ihv"/>
                         <viewControllerLayoutGuide type="bottom" id="wVU-7l-vyN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pwV-wa-JuR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đây là MainViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PW-cQ-1ZH">
+                                <rect key="frame" x="0.0" y="248" width="375" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4PW-cQ-1ZH" firstAttribute="width" secondItem="pwV-wa-JuR" secondAttribute="width" id="9Y1-1W-YWI"/>
+                            <constraint firstItem="4PW-cQ-1ZH" firstAttribute="centerY" secondItem="pwV-wa-JuR" secondAttribute="centerY" constant="-40" id="ZUd-2x-BmT"/>
+                            <constraint firstItem="4PW-cQ-1ZH" firstAttribute="centerX" secondItem="pwV-wa-JuR" secondAttribute="centerX" id="d9B-dd-g9e"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xR8-cs-Rz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="147"/>
+            <point key="canvasLocation" x="521.5" y="146.5"/>
         </scene>
     </scenes>
 </document>

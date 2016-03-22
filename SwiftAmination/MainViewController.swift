@@ -8,17 +8,14 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController?.navigationBar.hidden = false
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-	}
-	
-	func pushViewController(viewController: UIViewController){
-		APP_DELEGATE.navigation?.pushViewController(viewController, animated: true)
 	}
 }

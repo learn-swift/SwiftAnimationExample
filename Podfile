@@ -4,17 +4,18 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'SwiftAmination' do
-    pod 'Alamofire', '~> 3.0'
-    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-    pod 'SwiftDateTools'
-    pod 'Dollar'
-    pod 'IQKeyboardManagerSwift'
-    pod 'UIDevice-Hardware'
-    pod 'CryptoSwift'
+	pod 'Alamofire', '~> 3.0'
+	pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+	pod 'SlideMenuControllerSwift'
+	pod 'SwiftDateTools'
+	pod 'Dollar'
+	pod 'IQKeyboardManagerSwift'
+	pod 'UIDevice-Hardware'
+	pod 'CryptoSwift'
 end
 
 target 'SwiftAminationTests' do
-
+	
 end
 
 target 'SwiftAminationUITests' do

@@ -7,35 +7,62 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	var window: UIWindow?
 	var navigation: UINavigationController?
+	var mainViewController: MainViewController?
+	var leftViewController: LeftViewController?
 	var loginViewController: LoginViewController?
+	var slideMenuController: SlideMenuController?
+	
 	var isLoggedIn = false
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		window = UIWindow(frame: UIScreen.mainScreen().bounds);
-		checkLogin()
+		initSlideViewController()
 		return true
 	}
 	
-	func checkLogin() {
-		// if((NSUserDefaults.standardUserDefaults().valueForKey("isLoggedIn")) != nil) {
-		// isLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn")
-		// } else {
-		// goToLogin()
-		// }
-		goToLogin()
-	}
-	func goToLogin() {
-		NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isLoggedIn")
+	func initSlideViewController() {
+		let storyboard = UIStoryboard(name: "Main", bundle: nil);
+		mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as? MainViewController
 		loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil);
-		navigation = UINavigationController(rootViewController: loginViewController!);
-		window?.rootViewController = navigation
+		leftViewController = LeftViewController(nibName: "LeftViewController", bundle: nil)
+		navigation = UINavigationController(rootViewController: mainViewController!);
+
+		slideMenuController = SlideMenuController(mainViewController: navigation!, leftMenuViewController: leftViewController!)
+		
+		
+		if checkLoggedIn() == true {
+			gotoMain()
+		} else {
+			showLoginScreen()
+		}
+		
+		self.window?.makeKeyAndVisible()
 	}
+	
+	func showLoginScreen(){
+		navigation = UINavigationController(rootViewController: loginViewController!);
+		window!.rootViewController = navigation
+	}
+	
+	func gotoMain(){
+
+		window!.rootViewController = slideMenuController
+	}
+	
+	func checkLoggedIn() -> Bool{
+		if ((NSUserDefaults.standardUserDefaults().valueForKey("isLoggedIn")) != nil) {
+			return NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn")
+		}
+		return false
+	}
+	
 	func applicationWillResignActive(application: UIApplication) {
 	}
 	
@@ -51,9 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(application: UIApplication) {
 	}
 	
-	func pushViewController(uiViewcontroller: UIViewController) {
+	func pushViewController(viewController: UIViewController) {
+		APP_DELEGATE.mainViewController?.navigationController?.pushViewController(viewController, animated: true)
 	}
 }
-
-
 

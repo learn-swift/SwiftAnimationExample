@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
-class LoginViewController: MainViewController {
+class LoginViewController: BaseViewController {
 	
 	@IBOutlet weak var labelHeading: UILabel!
 	@IBOutlet weak var textfieldEmail: UITextField!
@@ -66,9 +67,19 @@ class LoginViewController: MainViewController {
 		let user = AccountService.sharedInstance.findUser(u)
 		
 		if user != nil {
-			let alert = UIAlertView(title: "SUCCESS", message: ":)", delegate: self, cancelButtonTitle: "OK")
-			alert.show()
+			NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isLoggedIn")
+			let mainViewController = initViewController("Main", storyid: "MainViewController") as! MainViewController
+
+			let leftViewController = LeftViewController(nibName: "LeftViewController", bundle: nil)
+			let navigation = UINavigationController(rootViewController: mainViewController);
+
+			let slideMenuController = SlideMenuController(mainViewController: navigation, leftMenuViewController: leftViewController)
+
+			APP_DELEGATE.window?.rootViewController = slideMenuController
+			//pushRootViewController(mainViewController)
+			
 		} else {
+			NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isLoggedIn")
 			let alert = UIAlertView(title: "FAILED", message: ":(", delegate: self, cancelButtonTitle: "OK")
 			alert.show()
 		}

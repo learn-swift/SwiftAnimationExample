@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8A075CAB1CA02D9C00C0552B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A075CAA1CA02D9C00C0552B /* data.json */; };
+		8A1C99FE1CA12A9E005A3177 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C99FD1CA12A9E005A3177 /* Menu.swift */; };
+		8A1C9A011CA12B0C005A3177 /* LeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C99FF1CA12B0C005A3177 /* LeftMenuCell.swift */; };
+		8A1C9A021CA12B0C005A3177 /* LeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1C9A001CA12B0C005A3177 /* LeftMenuCell.xib */; };
+		8A1C9A051CA12CBD005A3177 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C9A031CA12CBD005A3177 /* LeftViewController.swift */; };
+		8A1C9A061CA12CBD005A3177 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1C9A041CA12CBD005A3177 /* LeftViewController.xib */; };
 		8A5829C41C9FDB8300D7E90E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5829C31C9FDB8300D7E90E /* AppDelegate.swift */; };
 		8A5829CB1C9FDB8300D7E90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5829CA1C9FDB8300D7E90E /* Assets.xcassets */; };
 		8A5829CE1C9FDB8300D7E90E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5829CC1C9FDB8300D7E90E /* LaunchScreen.storyboard */; };
@@ -23,6 +28,7 @@
 		8A582A061C9FFD0800D7E90E /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A582A051C9FFD0800D7E90E /* UserLogin.swift */; };
 		8A582A081C9FFE5D00D7E90E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A582A071C9FFE5D00D7E90E /* String.swift */; };
 		8A582A0A1CA0004400D7E90E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A582A091CA0004400D7E90E /* User.swift */; };
+		8AA59E591CA13E4900442479 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA59E581CA13E4900442479 /* BaseViewController.swift */; };
 		DD24A64AE437870C18BEBF9D /* Pods_SwiftAmination.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CBC087111AB95997CD4C68 /* Pods_SwiftAmination.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,11 @@
 /* Begin PBXFileReference section */
 		5755F6CE6F43B0BA261A75B2 /* Pods-SwiftAmination.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAmination.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAmination/Pods-SwiftAmination.release.xcconfig"; sourceTree = "<group>"; };
 		8A075CAA1CA02D9C00C0552B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		8A1C99FD1CA12A9E005A3177 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		8A1C99FF1CA12B0C005A3177 /* LeftMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuCell.swift; sourceTree = "<group>"; };
+		8A1C9A001CA12B0C005A3177 /* LeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuCell.xib; sourceTree = "<group>"; };
+		8A1C9A031CA12CBD005A3177 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		8A1C9A041CA12CBD005A3177 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		8A5829C01C9FDB8300D7E90E /* SwiftAmination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAmination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5829C31C9FDB8300D7E90E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5829CA1C9FDB8300D7E90E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 		8A582A051C9FFD0800D7E90E /* UserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		8A582A071C9FFE5D00D7E90E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8A582A091CA0004400D7E90E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8AA59E581CA13E4900442479 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D61459322D438CD9B46D9A17 /* Pods-SwiftAmination.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAmination.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAmination/Pods-SwiftAmination.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CBC087111AB95997CD4C68 /* Pods_SwiftAmination.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAmination.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,10 +195,13 @@
 		8A5829FF1C9FFB9E00D7E90E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8A5829F81C9FE9FC00D7E90E /* Main.storyboard */,
+				8AA59E581CA13E4900442479 /* BaseViewController.swift */,
 				8A5829FA1C9FEA1100D7E90E /* MainViewController.swift */,
+				8A5829F81C9FE9FC00D7E90E /* Main.storyboard */,
 				8A5829F11C9FDE1A00D7E90E /* LoginViewController.swift */,
 				8A5829F21C9FDE1A00D7E90E /* LoginViewController.xib */,
+				8A1C9A031CA12CBD005A3177 /* LeftViewController.swift */,
+				8A1C9A041CA12CBD005A3177 /* LeftViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +209,8 @@
 		8A582A001C9FFBA500D7E90E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8A1C99FF1CA12B0C005A3177 /* LeftMenuCell.swift */,
+				8A1C9A001CA12B0C005A3177 /* LeftMenuCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 			children = (
 				8A582A051C9FFD0800D7E90E /* UserLogin.swift */,
 				8A582A091CA0004400D7E90E /* User.swift */,
+				8A1C99FD1CA12A9E005A3177 /* Menu.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -341,8 +359,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A5829F41C9FDE1A00D7E90E /* LoginViewController.xib in Resources */,
+				8A1C9A061CA12CBD005A3177 /* LeftViewController.xib in Resources */,
 				8A5829CE1C9FDB8300D7E90E /* LaunchScreen.storyboard in Resources */,
 				8A5829CB1C9FDB8300D7E90E /* Assets.xcassets in Resources */,
+				8A1C9A021CA12B0C005A3177 /* LeftMenuCell.xib in Resources */,
 				8A075CAB1CA02D9C00C0552B /* data.json in Resources */,
 				8A5829F91C9FE9FC00D7E90E /* Main.storyboard in Resources */,
 			);
@@ -417,13 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA59E591CA13E4900442479 /* BaseViewController.swift in Sources */,
 				8A5829FE1C9FED2900D7E90E /* UIDevice.swift in Sources */,
 				8A5829F71C9FE4A000D7E90E /* Common.swift in Sources */,
 				8A5829F31C9FDE1A00D7E90E /* LoginViewController.swift in Sources */,
 				8A582A031C9FFBF700D7E90E /* AccountService.swift in Sources */,
+				8A1C99FE1CA12A9E005A3177 /* Menu.swift in Sources */,
 				8A5829C41C9FDB8300D7E90E /* AppDelegate.swift in Sources */,
 				8A582A0A1CA0004400D7E90E /* User.swift in Sources */,
+				8A1C9A011CA12B0C005A3177 /* LeftMenuCell.swift in Sources */,
 				8A582A061C9FFD0800D7E90E /* UserLogin.swift in Sources */,
+				8A1C9A051CA12CBD005A3177 /* LeftViewController.swift in Sources */,
 				8A582A081C9FFE5D00D7E90E /* String.swift in Sources */,
 				8A5829FB1C9FEA1100D7E90E /* MainViewController.swift in Sources */,
 			);

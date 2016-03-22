@@ -3,6 +3,7 @@ PODS:
   - CryptoSwift (0.2.3)
   - Dollar (5.0.0)
   - IQKeyboardManagerSwift (4.0.0)
+  - SlideMenuControllerSwift (2.0.5)
   - SwiftDateTools (1.0)
   - SwiftyJSON (2.3.2)
   - UIDevice-Hardware (0.1.7)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - CryptoSwift
   - Dollar
   - IQKeyboardManagerSwift
+  - SlideMenuControllerSwift
   - SwiftDateTools
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
   - UIDevice-Hardware
@@ -30,6 +32,7 @@ SPEC CHECKSUMS:
   CryptoSwift: b2bf37b8e7cc6d682ef3365cb966bc5ae5174aa5
   Dollar: 310893dd6b3799b9b155e3deb61a0492987e4d03
   IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
   SwiftDateTools: e83af27a2075a60e0a8b8044e20e7d1054173056
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   UIDevice-Hardware: de848ac4b53de555f70ff1a32877454d221c71d1
